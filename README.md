@@ -1,70 +1,96 @@
-# Mid Course Assessment - ML Case Study(Credit Scoring (Banking &amp; Financial Services))
+# 💳 Credit Scoring System using Machine Learning
 
-This project aims to develop a machine learning-based credit scoring system for a financial institution to classify customers into good, poor, or standard credit risk categories. By leveraging historical financial behavior, loan history, and demographic data, the solution seeks to replace traditional, error-prone methods with a dynamic, interpretable model that improves risk assessment accuracy, reduces defaults, and enables personalized financial services.
+### Classification of Customer Credit Risk (Good / Standard / Poor)
 
-**Objective :** 
+🚀 Built a machine learning-based credit scoring system to classify customers into different risk categories and improve financial decision-making.
 
-**The main objective is to build a predictive model that can classify individuals into different credit score categories (e.g., Bad, Standard, Good) based on the available features. This can assist lenders in making informed decisions regarding credit approvals and risk management.**
+---
 
-**Data Description:** 
+## 📌 Project Overview
 
-* This dataset contains financial and credit-related information for customers, including details about their income, loans, credit behavior, and credit score classification. Below is a structured breakdown of the data:
+This project focuses on predicting customer credit risk using historical financial, behavioral, and demographic data. The goal is to replace traditional rule-based methods with a data-driven, scalable ML solution for better risk assessment and reduced defaults.
 
-* ID : Unique identifier for each entry.
+---
 
-* Customer_ID : Unique identifier for each customer.
+## 🎯 Objective
 
-* Month : The month when the data was recorded.
+* Classify customers into **Good, Standard, or Poor** credit categories
+* Improve accuracy in credit risk prediction
+* Assist financial institutions in **loan approval and risk management**
 
-* Name : Customer's name.
+---
 
-* Age : Customer's age.
+## 📊 Dataset Description
 
-* SSN : Social Security Number of the customer.
+The dataset includes customer financial details such as:
 
-* Occupation : Customer’s profession.
+* Income, salary, and occupation
+* Loan history and interest rates
+* Credit utilization and outstanding debt
+* Payment behavior and delays
+* Credit history age and account details
 
-* Annual_Income : Total yearly income of the customer.  
+---
 
-* Monthly_Inhand_Salary : Net salary received per month after deductions.
+## ⚙️ Approach
 
-* Num_Bank_Accounts : Total number of bank accounts held by the customer.
+* 🧹 Data Cleaning (missing values, outliers)
+* 📊 Exploratory Data Analysis (EDA)
+* 🏷 Feature Engineering & Selection
+* ⚖️ Handling class imbalance
+* 🔤 Label Encoding for categorical variables
 
-* Num_Credit_Card : Number of credit cards owned.
+---
 
-* Interest_Rate : Interest rate applied to loans or credits.
+## 🤖 Models Used
 
-* Num_of_Loan : Number of loans taken by the customer.
+* Logistic Regression
+* Random Forest
+* Gradient Boosting
+* XGBoost
 
-* Type_of_Loan : Types of loans the customer has.
+---
 
-* Delay_from_due_date : Number of days a payment has been delayed beyond the due date.
+## 📈 Results
 
-* Num_of_Delayed_Payment : Total number of times the customer has delayed a payment.
+* ✅ **Best Model:** Random Forest
+* 🎯 **Accuracy:** 80.8%
+* 📊 Evaluated using Precision, Recall, F1-score, Confusion Matrix
+* ⚙️ Hyperparameter tuning with GridSearchCV
 
-* Changed_Credit_Limit : Any changes made to the customer's credit limit.
+---
 
-* Num_Credit_Inquiries : Number of times the customer’s credit history was checked.
+## 🛠 Tech Stack
 
-* Credit_Mix : Composition of various types of credit accounts held by the customer.
+* Python
+* Pandas, NumPy
+* Scikit-learn
+* Matplotlib, Seaborn
 
-* Outstanding_Debt : Total outstanding debt the customer owes.
+---
 
-* Credit_Utilization_Ratio : Ratio of utilized credit to the total available credit.
+## 💡 Key Insights
 
-* Credit_History_Age : Length of the customer’s credit history.
+* Payment behavior and credit utilization are strong predictors
+* Feature engineering significantly improved model performance
+* Ensemble models outperformed linear models
 
-* Payment_of_Min_Amount : Indicates if the customer has paid at least the minimum due amount.
+---
 
-* Total_EMI_per_month : Total Equated Monthly Installment (EMI) paid per month.
+## 🚀 Use Cases
 
-* Amount_invested_monthly : Monthly investment by the customer.
+* Credit risk assessment
+* Loan approval systems
+* Financial decision support
+* Fraud and default risk prediction
 
-* Payment_Behaviour : Pattern of payments made by the customer.
+---
 
-* Monthly_Balance : Available balance in the customer’s account per month.
+## 📌 Conclusion
 
-* Credit_Score (Target Variable) : The customer's credit score categorized as: (Good, Standard, Poor)
+This project demonstrates how machine learning can enhance credit scoring systems by improving prediction accuracy, reducing financial risk, and enabling data-driven decision-making in banking and finance.
 
+---
 
-**Worked on a Credit Scoring Supervised Classification project to predict customer credit default risk. Cleaned the dataset by handling missing values and removing outliers. Performed EDA, feature selection, and handled class imbalance. Applied Label Encoding for categorical variables during preprocessing. Trained multiple models, including Logistic Regression, XGBoost, Random Forest, and Gradient Boosting. Random Forest achieved the best performance with an accuracy of 0.808. Evaluated models using precision, recall, F1-score, and confusion matrix. Performed hyperparameter tuning using GridSearchCV to optimize the Random Forest model. This project demonstrates the practical application of supervised learning in financial risk analysis.**
+⭐ If you found this useful, consider giving it a star!
+
